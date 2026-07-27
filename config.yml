@@ -1,5 +1,4 @@
 # Configuração do Painel Administrativo para a página Delana
-local_backend: true
 backend:
   name: github
   repo: steve-pagno/delana
