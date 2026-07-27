@@ -1,22 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description"
-        content="Delana Design Projetos - Móveis planejados sob medida em Petrópolis. Projetos 100% personalizados, aproveitamento inteligente e acabamento premium.">
-    <link rel="canonical" href="https://seusite.com.br/">
-    
+    <meta name="description" content="Delana Design Projetos - Móveis planejados sob medida em Petrópolis. Projetos 100% personalizados, aproveitamento inteligente e acabamento premium.">
     <title>Delana Design Projetos - Móveis Planejados sob medida</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
     <header>
         <div class="logo">
             <img src="img/Logo Alto da Serra (10).png" alt="Delana Design Projetos">
@@ -31,15 +24,15 @@
 
     <section class="hero-slider-section">
         <div class="slider-container">
-            <div class="slide active" style="background-image: url('img/S-152\ \(4\).png');"></div>
-            <div class="slide" style="background-image: url('img/S-152\ \(5\).png');"></div>
-            <div class="slide" style="background-image: url('img/S-152\ \(6\).png');"></div>
+            <div class="slide active" style="background-image: url('img/S-152 (4).png');"></div>
+            <div class="slide" style="background-image: url('img/S-152 (5).png');"></div>
+            <div class="slide" style="background-image: url('img/S-152 (6).png');"></div>
         </div>
         <div class="hero-overlay"></div>
         
         <div class="hero-content animate-on-scroll">
-            <h1>MÓVEIS PLANEJADOS SOB MEDIDA PARA O SEU ESPAÇO</h1>
-            <ul class="hero-list">
+            <h1 id="hero-title">MÓVEIS PLANEJADOS SOB MEDIDA PARA O SEU ESPAÇO</h1>
+            <ul class="hero-list" id="hero-list">
                 <li><i class="fas fa-check"></i> Projetos 100% personalizados para o seu espaço</li>
                 <li><i class="fas fa-check"></i> Aproveitamento inteligente + acabamento premium</li>
                 <li><i class="fas fa-check"></i> Do projeto à execução com acompanhamento profissional</li>
@@ -54,10 +47,10 @@
     </section>
 
     <section class="features">
-        <h2 class="section-title animate-on-scroll">Móveis planejados para transformar cada ambiente da sua casa:</h2>
-        <p class="section-subtitle animate-on-scroll">Projetos sob medida que unem funcionalidade, sofisticação e aproveitamento inteligente de cada centímetro.</p>
-
-        <div class="features-grid">
+        <h2 class="section-title animate-on-scroll" id="features-title">Móveis planejados para transformar cada ambiente da sua casa:</h2>
+        <p class="section-subtitle animate-on-scroll" id="features-subtitle">Projetos sob medida que unem funcionalidade, sofisticação e aproveitamento inteligente de cada centímetro.</p>
+        
+        <div class="features-grid" id="features-grid">
             <div class="feature-item animate-on-scroll">
                 <div class="feature-img-container"><img src="img/SALA DE ESTAR.png" alt="Sala de estar"></div>
                 <p>Sala de estar</p>
@@ -101,15 +94,15 @@
     <section class="about-section">
         <div class="container">
             <div class="about-grid animate-on-scroll">
-                <div class="about-text">
-                    <h2 class="section-title text-left">Há mais de 25 anos transformando espaços em Petrópolis</h2>
+                <div class="about-text" id="about-text-container">
+                    <h2 class="section-title text-left" id="about-title">Há mais de 25 anos transformando espaços em Petrópolis</h2>
                     <p>Com uma trajetória sólida em Petrópolis, a <strong>Delana Design Projetos</strong> se consolidou como referência em qualidade e projetos personalizados.</p>
                     <p>Cada ambiente é desenvolvido com atenção aos detalhes, buscando unir design, funcionalidade e identidade.</p>
                     <p>Além dos móveis planejados, contamos com uma linha selecionada de móveis convencionais para compor diferentes estilos de ambiente.</p>
                     <p>Uma empresa 100% petropolitana, construída com confiança e dedicação ao longo dos anos.</p>
                 </div>
                 <div class="about-image double-image">
-                    <img src="img/IMG_5865.png" alt="Quem Somos - Delana Design">
+                    <img src="img/IMG_5865.png" alt="Quem Somos - Delana Design" id="about-image">
                 </div>
             </div>
         </div>
@@ -117,13 +110,13 @@
 
     <section class="before-after-section">
         <div class="container">
-            <h2 class="section-title text-center animate-on-scroll" style="text-align: center; margin-bottom: 40px;">Transformações Reais: Antes e Depois</h2>
+            <h2 class="section-title text-center animate-on-scroll" style="text-align: center; margin-bottom: 40px;" id="ba-title">Transformações Reais: Antes e Depois</h2>
             
             <div class="carousel-container animate-on-scroll">
                 <button class="carousel-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
                 
                 <div class="carousel-track-wrapper">
-                    <div class="carousel-track">
+                    <div class="carousel-track" id="ba-track">
                         <div class="carousel-slide">
                             <div class="ba-card">
                                 <div class="ba-label label-antes">Antes</div>
@@ -134,49 +127,8 @@
                                 <img src="img/DEPOIS 01.jpg" alt="Projeto Depois 01">
                             </div>
                         </div>
-                        <div class="carousel-slide">
-                            <div class="ba-card">
-                                <div class="ba-label label-antes">Antes</div>
-                                <img src="img/ANTES 02.jpeg" alt="Projeto Antes 02">
-                            </div>
-                            <div class="ba-card">
-                                <div class="ba-label label-depois">Depois</div>
-                                <img src="img/DEPOIS 02.jpeg" alt="Projeto Depois 02">
-                            </div>
-                        </div>
-                        <div class="carousel-slide">
-                            <div class="ba-card">
-                                <div class="ba-label label-antes">Antes</div>
-                                <img src="img/ANTES 03.jpeg" alt="Projeto Antes 03">
-                            </div>
-                            <div class="ba-card">
-                                <div class="ba-label label-depois">Depois</div>
-                                <img src="img/DEPOIS 03.jpeg" alt="Projeto Depois 03">
-                            </div>
-                        </div>
-                        <div class="carousel-slide">
-                            <div class="ba-card">
-                                <div class="ba-label label-antes">Antes</div>
-                                <img src="img/ANTES 04.jpeg" alt="Projeto Antes 04">
-                            </div>
-                            <div class="ba-card">
-                                <div class="ba-label label-depois">Depois</div>
-                                <img src="img/DEPOIS 04.jpeg" alt="Projeto Depois 04">
-                            </div>
-                        </div>
-                        <div class="carousel-slide">
-                            <div class="ba-card">
-                                <div class="ba-label label-antes">Antes</div>
-                                <img src="img/ANTES 05.jpeg" alt="Projeto Antes 05">
-                            </div>
-                            <div class="ba-card">
-                                <div class="ba-label label-depois">Depois</div>
-                                <img src="img/DEPOIS 05.jpeg" alt="Projeto Depois 05">
-                            </div>
-                        </div>
                     </div>
                 </div>
-
                 <button class="carousel-btn next-btn"><i class="fas fa-chevron-right"></i></button>
             </div>
         </div>
@@ -184,21 +136,19 @@
 
     <footer class="footer-contact">
         <div class="footer-grid container">
-            
             <div class="footer-col">
                 <h3><i class="fas fa-map-marker-alt"></i> Nossos Endereços</h3>
                 <div class="address-item">
                     <strong>Loja Bingen:</strong><br>
-                    Rua Bingen, n°1680 <br>
+                    Rua Bingen, nº 1680 <br>
                     <small>(ao lado do clube Magnólia)</small>
                 </div>
                 <div class="address-item">
                     <strong>Loja Alto da Serra:</strong><br>
-                    Rua Teresa, n°1515 - Loja 56 & 57 <br>
+                    Rua Teresa, nº 1515 - Loja 56 & 57 <br>
                     <small>(HiperShopping)</small>
                 </div>
             </div>
-
             <div class="footer-col contact-highlight">
                 <h3>Inicie seu Projeto</h3>
                 <p>Nossa equipe está pronta para te atender.</p>
@@ -206,7 +156,6 @@
                     <i class="fab fa-whatsapp"></i> (24) 2245-3529
                 </a>
             </div>
-
             <div class="footer-col">
                 <h3><i class="fas fa-share-alt"></i> Siga-nos</h3>
                 <p>Acompanhe nossos projetos e novidades no Instagram:</p>
@@ -214,32 +163,27 @@
                     <i class="fab fa-instagram"></i> @delanaplanejados
                 </a>
             </div>
-
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2026 Delana Design Projetos. Desenvolvido por Mellonry</p>
+            <p>&copy; 2026 Delana Design Projetos. Desenvolvido por mellonry</p>
         </div>
     </footer>
 
-    <a href="https://wa.me/552422453529?text=Olá. Quero começar meu projeto de móveis planejados!"
-        class="whatsapp-fixo" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+    <a href="https://wa.me/552422453529?text=Olá. Quero começar meu projeto de móveis planejados!" class="whatsapp-fixo" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
         <i class="fab fa-whatsapp"></i>
     </a>
 
     <script>
-        // 1. Efeito de Scroll (Fade In)
+        // Lógica de Scroll (Fade In)
         const scrollElements = document.querySelectorAll(".animate-on-scroll");
-
         const elementInView = (el, dividend = 1) => {
             const elementTop = el.getBoundingClientRect().top;
             return (elementTop <= (window.innerHeight || document.documentElement.clientHeight) / dividend);
         };
-
         const displayScrollElement = (element) => {
             element.classList.add("is-visible");
         };
-
         const handleScrollAnimation = () => {
             scrollElements.forEach((el) => {
                 if (elementInView(el, 1.1)) {
@@ -247,48 +191,121 @@
                 }
             })
         }
-
         window.addEventListener("scroll", handleScrollAnimation);
         window.addEventListener("load", handleScrollAnimation);
 
-        // 2. Lógica do Slider do Banner Principal
+        // Lógica do Slider do Banner Principal
         const slides = document.querySelectorAll('.slide');
         let currentSlide = 0;
-
         function nextSlide() {
             slides[currentSlide].classList.remove('active');
             currentSlide = (currentSlide + 1) % slides.length;
             slides[currentSlide].classList.add('active');
         }
-
-        // Troca de imagem a cada 5 segundos
         setInterval(nextSlide, 5000);
 
-        // 3. Lógica do Carrossel Antes e Depois
-        const trackBA = document.querySelector('.carousel-track');
-        const slidesBA = Array.from(trackBA.children);
-        const nextButton = document.querySelector('.next-btn');
-        const prevButton = document.querySelector('.prev-btn');
+        // Lógica do Carrossel Antes e Depois
         let currentSlideBA = 0;
-
-        function updateCarouselBA() {
-            const slideWidth = slidesBA[0].getBoundingClientRect().width;
-            trackBA.style.transform = 'translateX(-' + (slideWidth * currentSlideBA) + 'px)';
+        function initCarouselBA() {
+            const trackBA = document.querySelector('.carousel-track');
+            if(!trackBA) return;
+            const slidesBA = Array.from(trackBA.children);
+            if(slidesBA.length === 0) return;
+            
+            const nextButton = document.querySelector('.next-btn');
+            const prevButton = document.querySelector('.prev-btn');
+            
+            function updateCarouselBA() {
+                const slideWidth = slidesBA[0].getBoundingClientRect().width;
+                trackBA.style.transform = 'translateX(-' + (slideWidth * currentSlideBA) + 'px)';
+            }
+            
+            nextButton.onclick = () => {
+                currentSlideBA = (currentSlideBA === slidesBA.length - 1) ? 0 : currentSlideBA + 1;
+                updateCarouselBA();
+            };
+            
+            prevButton.onclick = () => {
+                currentSlideBA = (currentSlideBA === 0) ? slidesBA.length - 1 : currentSlideBA - 1;
+                updateCarouselBA();
+            };
+            
+            window.addEventListener('resize', updateCarouselBA);
         }
+        initCarouselBA();
 
-        nextButton.addEventListener('click', () => {
-            currentSlideBA = (currentSlideBA === slidesBA.length - 1) ? 0 : currentSlideBA + 1;
-            updateCarouselBA();
-        });
+        // Integração Dinâmica com Painel (Leitura JSON)
+        fetch('conteudo_home.json')
+            .then(response => response.json())
+            .then(data => {
+                if(data.hero) {
+                    document.getElementById('hero-title').innerHTML = data.hero.titulo;
+                    
+                    const heroList = document.getElementById('hero-list');
+                    heroList.innerHTML = '';
+                    data.hero.topicos.forEach(topico => {
+                        heroList.innerHTML += `<li><i class="fas fa-check"></i> ${topico}</li>`;
+                    });
+                    
+                    const slidesEls = document.querySelectorAll('.slide');
+                    if(data.hero.sliders && data.hero.sliders.length === slidesEls.length) {
+                        slidesEls.forEach((slide, index) => {
+                            slide.style.backgroundImage = `url('${data.hero.sliders[index]}')`;
+                        });
+                    }
+                }
+                
+                if(data.features) {
+                    document.getElementById('features-title').innerHTML = data.features.titulo;
+                    document.getElementById('features-subtitle').innerHTML = data.features.subtitulo;
+                    
+                    const featuresGrid = document.getElementById('features-grid');
+                    featuresGrid.innerHTML = '';
+                    data.features.itens.forEach(item => {
+                        featuresGrid.innerHTML += `
+                            <div class="feature-item animate-on-scroll is-visible">
+                                <div class="feature-img-container"><img src="${item.imagem}" alt="${item.texto}"></div>
+                                <p>${item.texto}</p>
+                            </div>
+                        `;
+                    });
+                }
 
-        prevButton.addEventListener('click', () => {
-            currentSlideBA = (currentSlideBA === 0) ? slidesBA.length - 1 : currentSlideBA - 1;
-            updateCarouselBA();
-        });
+                if(data.about) {
+                    document.getElementById('about-image').src = data.about.imagem;
+                    
+                    const aboutTextContainer = document.getElementById('about-text-container');
+                    aboutTextContainer.innerHTML = `<h2 class="section-title text-left" id="about-title">${data.about.titulo}</h2>`;
+                    data.about.textos.forEach(texto => {
+                        aboutTextContainer.innerHTML += `<p>${texto}</p>`;
+                    });
+                }
 
-        // Recalcular tamanho se a janela for redimensionada
-        window.addEventListener('resize', updateCarouselBA);
+                if(data.before_after) {
+                    document.getElementById('ba-title').innerHTML = data.before_after.titulo;
+                    
+                    const track = document.getElementById('ba-track');
+                    track.innerHTML = '';
+                    data.before_after.slides.forEach(slide => {
+                        track.innerHTML += `
+                            <div class="carousel-slide">
+                                <div class="ba-card">
+                                    <div class="ba-label label-antes">Antes</div>
+                                    <img src="${slide.antes}" alt="Projeto Antes">
+                                </div>
+                                <div class="ba-card">
+                                    <div class="ba-label label-depois">Depois</div>
+                                    <img src="${slide.depois}" alt="Projeto Depois">
+                                </div>
+                            </div>
+                        `;
+                    });
+                    
+                    currentSlideBA = 0;
+                    initCarouselBA();
+                }
+            })
+            .catch(err => console.log('O painel ainda não gerou o JSON ou o caminho está incorreto.', err));
     </script>
 </body>
-
 </html>
