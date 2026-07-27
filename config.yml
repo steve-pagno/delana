@@ -1,4 +1,3 @@
-# Configuração do Painel Administrativo para a página Delana
 backend:
   name: github
   repo: steve-pagno/delana
@@ -6,54 +5,55 @@ backend:
   base_url: https://auth-cms-delta.vercel.app
 
 site_url: https://www.delanaprojetos.com.br
-
 media_folder: "img"
 public_folder: "img"
 
 collections:
-  - name: "home"
-    label: "Página Inicial"
-    file: "conteudo_home.json"
-    extension: "json"
-    format: "json"
-    fields:
-      - label: "Hero Banner"
-        name: "hero"
-        widget: "object"
+  - name: "paginas"
+    label: "Páginas do Site"
+    files:
+      - label: "Página Inicial"
+        name: "home"
+        file: "conteudo_home.json"
+        format: "json"
         fields:
-          - {label: "Título Principal", name: "titulo", widget: "string"}
-          - {label: "Imagens do Slider", name: "sliders", widget: "list", field: {label: "Imagem", name: "slide", widget: "image"}}
-          - {label: "Tópicos de Vantagens", name: "topicos", widget: "list", field: {label: "Tópico", name: "topico", widget: "string"}}
-          
-      - label: "Seção de Ambientes (Features)"
-        name: "features"
-        widget: "object"
-        fields:
-          - {label: "Título", name: "titulo", widget: "string"}
-          - {label: "Subtítulo", name: "subtitulo", widget: "text"}
-          - label: "Itens de Ambiente"
-            name: "itens"
-            widget: "list"
+          - label: "Hero Banner"
+            name: "hero"
+            widget: "object"
             fields:
-              - {label: "Texto", name: "texto", widget: "string"}
-              - {label: "Imagem", name: "imagem", widget: "image"}
-
-      - label: "Sobre Nós"
-        name: "about"
-        widget: "object"
-        fields:
-          - {label: "Título", name: "titulo", widget: "string"}
-          - {label: "Imagem Lado a Lado", name: "imagem", widget: "image"}
-          - {label: "Parágrafos", name: "textos", widget: "list", field: {label: "Parágrafo", name: "texto", widget: "text"}}
-
-      - label: "Antes e Depois"
-        name: "before_after"
-        widget: "object"
-        fields:
-          - {label: "Título", name: "titulo", widget: "string"}
-          - label: "Slides"
-            name: "slides"
-            widget: "list"
+              - {label: "Título Principal", name: "titulo", widget: "string"}
+              - {label: "Imagens do Slider", name: "sliders", widget: "list", field: {label: "Imagem", name: "slide", widget: "image"}}
+              - {label: "Tópicos de Vantagens", name: "topicos", widget: "list", field: {label: "Tópico", name: "topico", widget: "string"}}
+              
+          - label: "Seção de Ambientes (Features)"
+            name: "features"
+            widget: "object"
             fields:
-              - {label: "Imagem Antes", name: "antes", widget: "image"}
-              - {label: "Imagem Depois", name: "depois", widget: "image"}
+              - {label: "Título", name: "titulo", widget: "string"}
+              - {label: "Subtítulo", name: "subtitulo", widget: "text"}
+              - label: "Itens de Ambiente"
+                name: "itens"
+                widget: "list"
+                fields:
+                  - {label: "Texto", name: "texto", widget: "string"}
+                  - {label: "Imagem", name: "imagem", widget: "image"}
+
+          - label: "Sobre Nós"
+            name: "about"
+            widget: "object"
+            fields:
+              - {label: "Título", name: "titulo", widget: "string"}
+              - {label: "Imagem Lado a Lado", name: "imagem", widget: "image"}
+              - {label: "Parágrafos", name: "textos", widget: "list", field: {label: "Parágrafo", name: "texto", widget: "text"}}
+
+          - label: "Antes e Depois"
+            name: "before_after"
+            widget: "object"
+            fields:
+              - {label: "Título", name: "titulo", widget: "string"}
+              - label: "Slides"
+                name: "slides"
+                widget: "list"
+                fields:
+                  - {label: "Imagem Antes", name: "antes", widget: "image"}
+                  - {label: "Imagem Depois", name: "depois", widget: "image"}
