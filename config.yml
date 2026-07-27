@@ -1,8 +1,12 @@
 # Configuração do Painel Administrativo para a página Delana
 local_backend: true
 backend:
-  name: git-gateway
+  name: github
+  repo: steve-pagno/delana
   branch: main
+  base_url: https://auth-cms-delta.vercel.app
+
+site_url: https://www.delanaprojetos.com.br
 
 media_folder: "img"
 public_folder: "img"
